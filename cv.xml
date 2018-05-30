@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cv xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation="cv.xsd">
+	<Identification>
+		<PersonName>
+			<FirstName>Marko</FirstName>
+			<Surname>Tallgren</Surname>
+		</PersonName>
+		<ContactInfo>
+			<AddressLine>Puolikuu</AddressLine>
+			<PostalCode>02210</PostalCode>
+			<Municipality>Espoo</Municipality>
+			<Country>Suomi</Country>
+			<Email>a1600545@myy.haaga-helia.fi</Email>
+		</ContactInfo>
+		<Demographics>
+			<Birthdate year="1992" month="5" day="12" />
+			<Gender>Male</Gender>
+			<Nationality>Finnish</Nationality>
+		</Demographics>
+	</Identification>
+	<WorkExperienceList>
+		<WorkExperience>
+			<From year="2010" month="12" day="13" />
+			<To year="2018" month="12" day="12" />
+			<Position>Postboy</Position>
+			<Activities>Postboy things</Activities>
+			<Employer>Posti</Employer>
+		</WorkExperience>
+	</WorkExperienceList>
+</Cv>  

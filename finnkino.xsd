@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Events">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Event" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Title"/>
+              <xs:element type="xs:string" name="OriginalTitle"/>
+              <xs:element type="xs:short" name="ProductionYear"/>
+              <xs:element type="xs:short" name="LengthInMinutes"/>
+              <xs:element type="xs:dateTime" name="dtLocalRelease"/>
+              <xs:element type="xs:string" name="Rating"/>
+              <xs:element type="xs:string" name="EventType"/>
+              <xs:element type="xs:string" name="Genres"/>
+              <xs:element type="xs:string" name="ShortSynopsis"/>
+              <xs:element type="xs:string" name="Synopsis"/>
+              <xs:element name="Cast">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Actor" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="FirstName"/>
+                          <xs:element type="xs:string" name="LastName"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Directors">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Director" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="FirstName"/>
+                          <xs:element type="xs:string" name="LastName"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
